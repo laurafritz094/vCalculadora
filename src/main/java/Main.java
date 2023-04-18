@@ -1,5 +1,4 @@
 
-import java.net.DatagramPacket;
 import java.util.Scanner;
 
 public class Main {
@@ -154,19 +153,46 @@ public class Main {
     }
 
     private static void calcularporcentaje(Double[] num) {
-        System.out.println("esta en mantenimiento esta opcion");
+        System.out.println("el primer numero es el porcentaje del segundo");
+        num = llenarMatriz2numeros(num);
+        double porcentaje = (num[0] * num[1]) / 100;
+        System.out.println("su porcentaje es: "+ porcentaje);
     }
 
     private static void potenciaprimernumelevadoalsegundo(Double[] num) {
-        System.out.println("esta en mantenimiento esta opcion");
+        num = llenarMatriz2numeros(num);
+        double cuadrado = Math.pow(num[0], num[1]);
+        System.out.println(num[0] +" elevado a "+num[1]+" es " + cuadrado);
     }
 
     private static void nMenor(Double[] num) {
-        System.out.println("esta en mantenimiento esta opcion");
+        num = llenarMatriz2numeros(num);
+        int indiceDelmenor = 0;
+        // Recorrer arreglo y ver si no es así
+        // (comenzar desde el 1 porque el 0 ya lo tenemos contemplado arriba)
+        for (int x = 1; x < num.length; x++) {
+            if (num[x] < num[indiceDelmenor]) {
+                indiceDelmenor = x;
+            }
+        }
+        // Ahora podemos obtener el mayor usando la posición
+        Double menor = num[indiceDelmenor];
+        System.out.println("el numero menor es: "+ menor);;
     }
 
     private static void nMayor(Double[] num) {
-        System.out.println("esta en mantenimiento esta opcion");
+        num = llenarMatriz2numeros(num);
+        int indiceDelMayor = 0;
+        // Recorrer arreglo y ver si no es así
+        // (comenzar desde el 1 porque el 0 ya lo tenemos contemplado arriba)
+        for (int x = 1; x < num.length; x++) {
+            if (num[x] > num[indiceDelMayor]) {
+                indiceDelMayor = x;
+            }
+        }
+        // Ahora podemos obtener el mayor usando la posición
+        Double mayor = num[indiceDelMayor];
+        System.out.println("el numero mayor es: "+ mayor);;
     }
 
     private static void division(Double[] num) {
