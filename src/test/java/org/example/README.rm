@@ -1,0 +1,6 @@
+#Paso 2
+Se debe entregar una matriz de largo 3, siendo la posicion 0, posicion 1 y posicion 3 los valores para A,B y C respecticamente. La variable potencia representa el discriminante y posteriormente se procede al calculo.
+#paso 4
+Se entrega una matriz de largo 6, las 3 primeras pisiones corresponden a la primera ecuación en orden Ax+By=C y los 3 siguientes a la segunda ecuación en Orden Dx+Ey=F.
+#paso 5
+En este paso el metodo requiere de parámetro Double[] de largo 5, en donde las dos primeras posiciones corresponden al x e y respectivamente del primer punto, las 2 siguientes posiciones corresponden al segundo par ordenado y la ultima posicion corresponde al punto de corte con el eje y.
